@@ -1,0 +1,177 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=5mm,top=5mm,right=5mm,bottom=5mm]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage[L7x]{fontenc}
+\usepackage[lithuanian]{babel}
+\usepackage{multicol}
+\usepackage{./style}
+\usepackage{fourier}
+\begin{document}
+
+\pagestyle{empty}
+
+  \section{Darbas su bylomis}
+
+  \begin{multicols}{2}
+    
+    \textbf{:e byla} atidaro naują bylą. Galima naudoti tab mygtuką
+    greitam bylos vardo surinkimui.
+    
+    \textbf{:w byla} išsaugo pakeitimus į bylą. Jeigu nenurodyti
+    bylos, vim automatiškai išsaugos pakeitimus į atidarytą bylą.
+
+    \textbf{:q} išeiti iš vim redaktoriaus. Jeigu turite
+    neišsaugoję pakeitimų - vim atsisakys užsidaryti.
+
+    \textbf{:q!} išeiti iš vim neišsaugant pakeitimų.
+
+    \textbf{:wq} išsaugoti pakeitimus ir išeiti.
+
+    \textbf{:x} kažkas panašaus kaip ir \textsl{:wq}, tačiau
+    \textsl{:x} dar patikrina ar buvo padaryti kažkokie pakeitimai
+    byloje. Jeigu pakeitimai buvo padaryti - tuomet išsaugo pakeitimus
+    ir išeina, jeigu pakeitimai padaryti nebuvo - tiesiog išeina.
+
+  \end{multicols}
+
+  \section{Navigacija byloje}
+
+  \begin{multicols}{2}
+
+    \textbf{j arba rodyklė į viršų} kursorių perkelia viena eilute
+    aukščiau.
+
+    \textbf{k arba rodyklė žemyn} viena eilute žemiau
+
+    \textbf{h arba rodyklė į kairę} perkelia kursorių vienu simboliu į
+    kairę.
+
+    \textbf{l arba rodyklę į dešinę} perkelia kursorių vienu
+    simboliu į dešinę.
+
+    \textbf{e} iki žodžio galo.
+
+    \textbf{E} iki tarpais aptverto žodžio galo.
+
+    \textbf{b} iki žodžio pradžios.
+
+    \textbf{B} iki tarpais aptverto žodžio pradžios.
+
+    \textbf{0} iki eilutės pradžios.
+
+    \textbf{\^{}} iki pirmo žodžio eilutės pradžioje.
+
+    \textbf{\$} iki eilutės pabaigos.
+
+    \textbf{H} iki pirmos eilutės ekrane.
+
+    \textbf{M} iki vidurinės eilutės ekrane.
+    
+    \textbf{L} iki paskutinės eilutės ekrane.
+
+    \textbf{:n eilutės-skaičius} perkelia iki nurodytos eilutės. 
+
+  \end{multicols}
+
+  \section{Teksto redagavimas}
+
+  \begin{multicols}{2}
+
+    \textbf{i} įterpti prieš kursorių.
+
+    \textbf{I} įterpti eilutės pradžioje.
+
+    \textbf{a} pridėti po kursoriaus.
+
+    \textbf{A} pridėti eilutės pabaigoje.
+
+    \textbf{o} sukurti naują eilutę apačioje ir įterpti.
+
+    \textbf{O} sukurti naują eilutę viršuje ir įterpti.
+
+    \textbf{C} pakeisti likusią eilutės dalį.
+
+    \textbf{r} pakeisti vieną simbolį. Po simbolio pakeitimo,
+    grįžtama į command mode.
+
+    \textbf{R} įjungiamas insert mode, tačiau visas tekstas ne
+    įterpiamas, o keičiamas.
+
+    \textbf{ESC} išeiti iš bet kokio mode ir grįžti į command mode.
+
+  \end{multicols}
+
+  \section{Teksto trinimas}
+
+  \begin{multicols}{2}
+
+    \textbf{x} ištrinti po kursoriumi esantį simbolį.
+
+    \textbf{X} ištrinti visus simbolius prieš kursorių.
+
+    \textbf{dd} arba \textbf{:d} ištrina visą eilutę.
+
+  \end{multicols}
+
+  \section{Visual mode įjungimas}
+
+  \begin{multicols}{2}
+
+    \textbf{v} pradeda žymėti simbolius. Naudokite paprastus
+    navigacinius mygtukus.
+
+    \textbf{V} pradeda žymėti eilutes.
+
+  \end{multicols}
+
+  \section{Teksto blokų redagavimas}
+
+  \begin{multicols}{2}
+
+    \textbf{\~} pakeičia raides iš didžiųjų į mažąsias ir atvirkščiai.
+
+    \textbf{> (V)} pastumti į dešinę.
+
+    \textbf{< (V)} pastumti į kairę.
+
+    \textbf{c (V)} pakeisti pažymėtą tekstą.
+
+    \textbf{y (V)} nukopijuoja tekstą
+
+    \textbf{d (V)} ištrina tekstą.
+
+    \textbf{yy} arba \textsl{:y} arba \textsl{Y} nukopijuoja dabartinę
+    eilutę.
+
+    \textbf{p} įklijuoja tekstą.
+
+    \textbf{P} įklijuoja tekstą prieš kursorių.
+
+  \end{multicols}
+
+  \section{Anuliavimas ir perdarymas}
+
+  \begin{multicols}{2}
+
+    \textbf{u} anuliuoti paskutinį veiksmą.
+
+    \textbf{U} anuliuoti visus pakeitimus, kurie buvo atlikti
+    eilutėje.
+
+    \textbf{Cltr + r} perdaryti.
+
+  \end{multicols}
+
+  \begin{multicols}{2}
+
+    \section{Paieška}
+
+    \textbf{/žodis} ieškoti žodžio byloje.
+
+    \textbf{n} tęsti paiešką ta pačia linkme.
+
+    \textbf{N} tęsti paiešką priešinga linkme.
+
+  \end{multicols}
+
+\end{document}
